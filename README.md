@@ -1,1 +1,1 @@
-# thingsswarm
+# Open Things Cloud
