@@ -4,9 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>openthingscloud</artifactId>
+        <artifactId>openthingscloud-bom</artifactId>
         <groupId>com.github.openthingscloud</groupId>
         <version>0.0.0-SNAPSHOT</version>
+        <relativePath>../bom</relativePath>
     </parent>
 
     <artifactId>openthingscloud-frontend</artifactId>
@@ -40,18 +41,6 @@
         <spring-cloud.version>1.1.0.RELEASE</spring-cloud.version>
         <usertype-core.version>3.2.0.GA</usertype-core.version>
     </properties>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-parent</artifactId>
-                <version>1.2.2.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -490,13 +479,6 @@
                             <version>[${java.version}.0,)</version>
                         </requireJavaVersion>
                     </rules>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <packagingExcludes>WEB-INF/lib/tomcat-*.jar</packagingExcludes>
                 </configuration>
             </plugin>
             <plugin>
