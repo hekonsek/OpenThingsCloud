@@ -2,8 +2,7 @@
 
 angular.module('zedpanelApp')
     .controller('MainController', function ($scope, $http, Principal) {
-        Principal.identity().then(function (account) {
-            $scope.account = account;
+        $scope.isDisplayed = true;
             $scope.isAuthenticated = Principal.isAuthenticated;
 
             $scope.selection = [];
@@ -44,5 +43,4 @@ angular.module('zedpanelApp')
                     });
                 }
             }
-        });
     });
