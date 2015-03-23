@@ -9,3 +9,4 @@ target/
 .tmp/
 node/
 node_modules/
+dist/
