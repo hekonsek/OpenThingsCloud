@@ -1,0 +1,8 @@
+# IntelliJ Idea
+.idea/
+*.iml
+
+# Angular
+.tmp/
+node/
+node_modules/
